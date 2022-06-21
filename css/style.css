@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rajdhani&display=swap');
+
+:root {
+    --color: #FAF8FF;
+    --border: #FFFADE;
+    --backcon: rgb(65, 65, 157), 0.9;
+    --container: #0c2257;
+    --hover: #D0C2FF;
+    --special: #9F94FC;
+    --btn: #A0242B;
+    --border: 4px solid #5a5a5a;
+    --border-li: 2px solid #5a5a5a;
+    --special2: #FFB450;
+    --border-redu: 16px;
+    --transfor: all .1s ease-in-out;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transfor);
+    color: var(--color);
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right top,
+            #16191d, #091d33, #002049, #00205e,
+            #001d71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section for Home page and usename */
+.section-1 {
+    min-width: 80vw;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border: 4px dotted white;
+    float: right;
+    font-size: 1.9rem;
+    
+}
+.logo i{
+    color: var(--special2);
+}
+.heading {
+    width: fit-content;
+    margin: auto;
+    clear: both;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 0 9px 0;
+    border-bottom: 5px solid var(--special2);
+}
+
+.user-name {
+    font-size: 1.5rem;
+    padding: 55px 0 0 8%;
+}
+
+.user-name input {
+    width: 450px;
+    height: 45px;
+    border-radius: var(--border-redu);
+    background-color: transparent;
+    border: var(--border);
+    color: var(--color);
+    padding: 0 0 0 10px;
+    font-size: 1.2rem;
+}
+
+/*  Categeries of options */
+#categ {
+    width: fit-content;
+    margin: 30px 0 0 8%;
+    padding: 0 0 5px 0;
+    border-bottom: 3px solid var(--special2);
+}
+
+.type-option {
+    width: 600px;
+    height: 120px;
+    background-color: var(--container);
+    margin: 25px 0 0 8%;
+    padding: 15px;
+}
+
+.startbtn {
+    margin: 20px 0 0 8% !important;
+}
+
+.user-selected {
+    height: 55px;
+    width: fit-content;
+    background-color: var(--container);
+    margin: 15px 0 0 8%;
+    padding: 9px 20px 0 18px;
+
+}
+
+
+/* Section for greeting */
+.greeting {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    width: auto;
+    margin: 1.5%;
+    padding: 0 15px;
+    background-color: var(--container);
+    border: var(--border);
+    border-radius: var(--border-redu);
+    font-size: .8rem;
+}
+
+/* section for notification */
+.section-2 {
+    width: 500px;
+}
+
+.section-2 h2 {
+    width: fit-content;
+    padding: 5px 0 5px 0;
+    border-bottom: 3px solid var(--special2);
+}
+
+.section-2 p {
+    padding: 20px 0 15px 0;
+    font-size: 1.2rem;
+}
+
+.notes li {
+    padding: 0 0 22px 20px;
+    list-style: none;
+    font-weight: 400;
+}
+
+.btna {
+    height: 60px;
+    gap: 20px;
+}
+
+.btna button {
+    padding: 0 20px !important;
+    margin: 0 !important;
+    height: 40px;
+
+}
+
+.btn3 {
+    position: relative;
+    height: 90px;
+    background-color: #A0242B;
+}
+
+.agree {
+    padding: 0 20px !important;
+    width: 110px !important;
+    height: 40px !important;
+    position: relative;
+}
+
+.tim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-redu);
+    background-color: var(--container);
+    opacity: 0.9;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+
+
+/* ======== section for questions anwser  ========= */
+.section-3 {
+    width: 800px;
+
+}
+
+.timer-box {
+    height: 160px;
+    background-color: var(--container);
+
+}
+
+.circle {
+    width: 140px;
+    height: 140px;
+    background-color: #85848e;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 2.8rem;
+    border: 5px solid #000;
+}
+
+.quetions {
+    font-size: 1.3rem;
+    margin: 40px 0 0 0;
+    padding: 10px 0 10px 10px;
+    text-indent: 20px;
+    line-height: 1.4;
+    border-bottom: var(--border);
+    border-top: var(--border);
+}
+
+.options {
+    width: 700px;
+    height: 220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: 48px 48px;
+    gap: 50px;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.options span {
+    justify-content: start;
+    font-size: 1.4rem;
+    border: var(--border-li);
+}
+
+.nextbtn {
+    width: 180px;
+    height: 90px;
+    margin: 0 auto;
+    gap: 35px;
+}
+
+.nextbtn span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: var(--border);
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: var(--transfor);
+}
+
+.nextbtn div:nth-child(1) :hover {
+    padding-right: 4px;
+}
+
+.nextbtn div:nth-child(2) :hover {
+    padding-left: 4px;
+}
+
+.Iamdone {
+    background-color: var(--special2);
+    font-size: 2.4rem;
+    position: absolute;
+    left: 75%;
+    bottom: 6%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Iamdone i:hover {
+    margin: 0 0 15px 0;
+}
+
+/* ========== section for result showing ========= */
+.section-4 {
+    width: 600px;
+}
+
+.section-4 h2 {
+    border-bottom: 5px solid var(--special2);
+    width: fit-content;
+    margin: auto;
+    padding: 0 0 8px 0;
+}
+
+.results {
+    width: 300px;
+    height: auto;
+    /* background-color: #FAF8FF; */
+    list-style: none;
+    padding: 35px 35px 10px 35px;
+    font-size: 1.3rem;
+}
+
+.results li {
+    margin: 0 0 15px 0;
+    background-color: var(--container);
+    width: 450px;
+    height: 40px;
+    border-radius: var(--border-redu);
+    justify-content: start;
+    padding: 0 0 0 20px;
+}
+
+.results span {
+    text-indent: 8px;
+}
+
+.last-buttons {
+    /* background-color: #A0242B; */
+    height: 50px;
+}
