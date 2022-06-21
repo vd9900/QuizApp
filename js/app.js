@@ -626,7 +626,7 @@ function ReslutPage() {
         
     })
     btn8.addEventListener("click",()=>{
-        location.replace("https://www.youtube.com")
+        location.replace("https://github.com/vd9900/QuizApp.git")
     })
 }
 
