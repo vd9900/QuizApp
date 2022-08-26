@@ -384,7 +384,7 @@ let UserAnwseredIndex;/*here anwser targeted by index of the user anwser and obj
     So, This will target the useroptins index*/
 let QuestionNumber = 0;//It is index of the Userselected array when next button clicked index will increase by 1
 let totalattempt = 0;//Total user Attempted 
-let UserAnwser;//It will convet  object(option is nodelist) to array to get the index number of the option
+let UserAnwser;//It will convert  object(option is nodelist) to array to geext the ind number of the option
 let correctAnwesers = 0;//IT will check the how many anwser is correct
 let wornganwser = 0;//It will check how many worng Anwesr
 let userAnwserIndex;//This user selected option's index
@@ -506,6 +506,7 @@ function QuizAnswerSelect(options) {
 
     timeroftaken = setInterval(checktimeing, 1000)
     function checktimeing() {
+        console.log(timetaken);
         timetaken++;
     }
     // 
@@ -541,8 +542,8 @@ function nextGo(parent) {
     
     // ===== timer for quetions 10s======
     function timerforquestion() {
-        Showtimer.innerHTML = `0:0${10 - sec}`;
-        if (sec == 10) {
+        Showtimer.innerHTML = `0:0${9 - sec}`;
+        if (sec == 9) {
             clearInterval(timerEachsecond);
             // This is for if user not selected any option then automatic it will go next questions
             if (QuestionNumber < 9) {
@@ -605,6 +606,7 @@ function MainQuiz() { //It will change the questions
             CheckTheAnswser(timerEachsecond);
             Section4.classList.remove("clsg")
             Section3.classList.add("clsg")
+            clearInterval(timeroftaken)//stop calculating total time taken by user
             ReslutPage()
         })
     } else {

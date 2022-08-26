@@ -41,6 +41,7 @@ body {
 /* Section for Home page and usename */
 .section-1 {
     min-width: 80vw;
+    margin: 18px;
 }
 
 .logo {
@@ -71,6 +72,7 @@ body {
 
 .user-name input {
     width: 450px;
+    max-width: 65%;
     height: 45px;
     border-radius: var(--border-redu);
     background-color: transparent;
@@ -91,10 +93,12 @@ body {
 
 .type-option {
     width: 600px;
+    max-width: 62%;
     height: 120px;
+    border-radius: var(--border-redu);
     background-color: var(--container);
-    margin: 25px 0 0 8%;
-    padding: 15px;
+    margin: 25px 0 0 100px;
+    padding: 12px;
 }
 
 .startbtn {
@@ -192,6 +196,8 @@ body {
 /* ======== section for questions anwser  ========= */
 .section-3 {
     width: 800px;
+    max-width: 80%;
+    margin: 18px;
 
 }
 
@@ -222,19 +228,21 @@ body {
 }
 
 .options {
-    width: 700px;
+    width: 100%;
     height: 220px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 280px);
+    grid-template-columns: repeat(2, 48%);
     grid-template-rows: 48px 48px;
     gap: 50px;
+    padding:0 10px;
     align-content: center;
     justify-content: center;
 
 }
 
 .options span {
+    /* width: 180px; */
     justify-content: start;
     font-size: 1.4rem;
     border: var(--border-li);
