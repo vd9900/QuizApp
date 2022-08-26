@@ -73,6 +73,7 @@ body {
     height: 45px;
     border-radius: var(--border-redu);
     background-color: transparent;
+    outline: none;
     border: var(--border);
     color: var(--color);
     padding: 0 0 0 10px;

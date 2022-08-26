@@ -502,7 +502,7 @@ openClose(Section3, Section2, btn3)
 
 function QuizAnswerSelect(options) {
 
-    // This function for usertaken time
+    // This function for usertaken total time calculating
 
     timeroftaken = setInterval(checktimeing, 1000)
     function checktimeing() {
@@ -541,9 +541,8 @@ function nextGo(parent) {
     
     // ===== timer for quetions 10s======
     function timerforquestion() {
-        sec++;
-        Showtimer.innerHTML = `0:0${8 - sec}`;
-        if (sec == 8) {
+        Showtimer.innerHTML = `0:0${10 - sec}`;
+        if (sec == 10) {
             clearInterval(timerEachsecond);
             // This is for if user not selected any option then automatic it will go next questions
             if (QuestionNumber < 9) {
@@ -557,7 +556,8 @@ function nextGo(parent) {
                 ReslutPage()//directly going result page
             }
         }
-
+        sec++;
+        
     }
     // ========end of the timer for questions
 
