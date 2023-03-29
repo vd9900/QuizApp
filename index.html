@@ -1,113 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/utilis.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="https://kit.fontawesome.com/b6e54b3865.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilis.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/b6e54b3865.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <!-- Section for home page of the quiz app -->
-    <section class="section-1 container ">
-        <div class="logo-Header">
-            <div class="logo flex-center"><i class="fa-regular fa-eye"></i></div>
-            <h1 class="heading">The Quiz App</h1>
+    <section class="section-1 container">
+      <div class="logo-Header">
+        <h1 class="heading">The Quiz App</h1>
+      </div>
+      <main class="quiz-cat">
+        <h2 id="categ">Category</h2>
+        <div class="type-option">
+          <span class="pac optcat select">Pipes and Cisterns</span>
+          <span class="Pro optcat select">Probability</span>
+          <span class="poa optcat select">Problems on age</span>
+          <span class="pal optcat select">Profit and loss</span>
         </div>
-        <div class="user-name">
-            <span>Name</span>
-            <input type="text" autocomplete="none" id="User">
-            <button class="btn btn1">Done</button>
+        <div class="btn_container">
+          <button class="startbtn btn btn2" data="hello">GetStart</button>
         </div>
-        <main class="quiz-cat">
-            <h2 id="categ">Category</h2>
-            <div class="type-option">
-                <span class="pac optcat select " >Pipes and Cisterns</span>
-                <span class="Pro optcat select " >Probability</span>
-                <span class="poa optcat select " >Problems on age</span>
-                <span class="pal optcat select " >Profit and loss</span>
-            </div>
-            <button class="startbtn btn btn2" data="hello">GetStart</button>
-            <div class="user-selected clsg">
-            </div>
-        </main>
+        <div class="user-selected clsg"></div>
+      </main>
     </section>
 
     <!-- popup for welcome note for user -->
     <div class="greeting flex-center clsg">
-        <h1 id="greetforname"></h1>
+      <h1 id="greetforname"></h1>
     </div>
-
 
     <!-- Section for notice -->
 
     <section class="section-2 container clsg">
-        <h2>Rules & Regulations</h2>
-        <p>Note :</p>
-        <ol class="notes">
-            <li id="usercheck"></li>
-            <li>2. In this Quiz app have total 10 Quetions</li>
-            <li>3. Each quetion have 4 options & you should click your  choice</li>
-            <li>4. Each Quetion have 10 seconds to answer.<li>
-            <li>5. After clicked the option make sure to <i class="fa-solid fa-arrow-right"></i> click to confirm</li>
-            <li>6. Total taken time will be display on the Result page</li>
-            <li>7. Reslut will show on the last page</li>
-            <li>8. Enjoy the game :)</li>
-        </ol>
-        <div class="btna flex-center">
-            <div class="agree btn flex-center btn3 Freeze">
-                <span class="I-ag">I agree</span><span class="tim"></span>
-            </div>
-            <button class="btn btnc btn4">Cancel</button>
+      <h2>Rules & Regulations</h2>
+      <ol class="notes">
+        <li id="usercheck"></li>
+        <li>2. In this Quiz app have total 10 Quetions</li>
+        <li>3. Each quetion have 4 options & you should click your choice</li>
+        <li>4. Each Quetion have 40 seconds to answer.</li>
+        <li>
+          5. After clicked the option make sure to click to Next
+        </li>
+        <li>6. Total taken time will be display on the Result page</li>
+        <li>7. Reslut will show on the last page</li>
+        <li>8. Enjoy the game :)</li>
+      </ol>
+      <div class="btna flex-center">
+        <div class="agree btn flex-center btn3 Freeze">
+          <span class="I-ag">I agree</span><span class="tim"></span>
         </div>
+        <button class="btn btnc btn4">Cancel</button>
+      </div>
     </section>
-
-
 
     <!-- Section for Quiz anwsering page -->
     <section class="section-3 container clsg">
-        <div class="timer-box">
-            <div class="circle flex-center timer">
-                <span>0:00</span>
-            </div>
+      <div class="timer-box">
+        <div class="circle flex-center timer">
+          <span>00</span>
         </div>
-        <div class="quetion-option">
-            <p class="quetions"></p>
-            <div class="options">
-                <span class="option option1 btn flex-center"></span>
-                <span class="option option2 btn flex-center"></span>
-                <span class="option option3 btn flex-center"></span>
-                <span class="option option4 btn flex-center"></span>
-            </div>
+      </div>
+      <div class="quetion-option">
+        <p class="quetions"></p>
+        <div class="options">
+          <span class="option option1 btn flex-center"></span>
+          <span class="option option2 btn flex-center"></span>
+          <span class="option option3 btn flex-center"></span>
+          <span class="option option4 btn flex-center"></span>
         </div>
-        <div class="nextbtn flex-center">
-            <span class="flex-center btn6" id="next"><i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-        <span  class="Iamdone flex-center clsg"> <i class="fa-solid fa-thumbs-up"></i></span>
+      </div>
+      <div class="nextbtn flex-center">
+        <span class="flex-center btn6" id="next"> Next</span>
+      </div>
+      <span class="Iamdone flex-center clsg"> Result </span>
     </section>
     <!--  Section for Result showing -->
     <section class="section-4 container clsg">
-        <h2>Quiz Result</h2>
-        <ul class="results">
-            <li class="pla flex-center"><span>Vinith</span></li>
-            <li class="tot flex-center"><span></span></li>
-            <li class="toqu flex-center"><span></span></li>
-            <li class="att flex-center"><span></span></li>
-            <li class="cor flex-center"><span></span></li>
-            <li class="wro flex-center"><span></span></li>
-            <li class="per flex-center"><span></span></li>
-        </ul>
-        <div class="last-buttons flex-center">
-            <div class="playbtn btn flex-center btn7">Start Again</div>
-            <div class="anwers btn flex-center btn8">Code</div>
-        </div>
+      <h2>Quiz Result</h2>
+      <ul class="results">
+        <li class="tot flex-center"></li>
+        <li class="toqu flex-center"></li>
+        <li class="att flex-center"></li>
+        <li class="cor flex-center"></li>
+        <li class="wro flex-center"></li>
+        <li class="per flex-center"></li>
+      </ul>
+      <div class="last-buttons flex-center">
+        <div class="playbtn btn flex-center btn7">Start Again</div>
+        <div class="anwers btn flex-center btn8">Code</div>
+      </div>
     </section>
     <script src="js/app.js"></script>
-</body>
-
+  </body>
 </html>

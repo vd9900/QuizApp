@@ -1,12 +1,18 @@
-@media screen  and (max-width:684px){
-    *{
-        color:red !important;
-
-    }
-    html{
-        font-size: 14px;
-    }
-    .user-name input{
-        /* width: 400px; */
-    }
+@media screen and (max-width: 684px) {
+  html {
+    font-size: 14px;
+  }
+  .section-3 {
+    /* min-height:a; */
+  }
+  .options {
+    color: red !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    row-gap: 10px !important;
+  }
+  .Iamdone {
+    width: 96%;
+    padding: 8px 0 !important;
+    margin: 10px auto !important;
+  }
 }
