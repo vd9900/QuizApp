@@ -31,6 +31,7 @@ body {
   height: 100vh;
   background-color: #eceef7;
   display: flex;
+  padding: 20px 0;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -207,7 +208,7 @@ body {
 /* ======== section for questions anwser  ========= */
 .section-3 {
   width: 900px !important;
-  max-width: 95%;
+  max-width: 96%;
   margin: 0 !important;
   padding: 0 0 !important;
   display: flex;

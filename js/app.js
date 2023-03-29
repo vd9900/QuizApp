@@ -642,7 +642,7 @@ function MainQuiz() {
 // ======= function for Show the result on last page =========
 function ReslutPage() {
   const newTimeTaken =
-    timetaken > 59 ? `${timetaken / 60}min` : `${timetaken}s`;
+    timetaken > 59 ? `${(timetaken / 60).toFixed(2)}min` : `${timetaken}s`;
   totaltimetaken.innerHTML = `
   <span>Time Taken</span>
   <span>${newTimeTaken}</span>
